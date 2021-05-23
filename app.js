@@ -53,7 +53,7 @@ let passMatch = false;
 function validateUserName(e) {
   if (!e.target.name === "name") return;
 
-  if (e.target.value.length > 3) {
+  if (e.target.value.length >= 3) {
     isValid = true;
     e.target.classList.add("accepted");
     e.target.classList.remove("rejected");
